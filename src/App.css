@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d0e7f9); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px; /* More rounded corners for a modern look */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh; /* Ensure it doesn't exceed viewport height */
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #007bff, #00d084); /* Gradient header background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+    animation: slideIn 0.6s ease-out;
+  }
+  
+  header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .surprise, button {
+    background: linear-gradient(135deg, #ff5722, #ff9800); /* Gradient button background */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .surprise:hover, button:hover {
+    background: linear-gradient(135deg, #e64a19, #f57c00); /* Darker gradient on hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    margin-right: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  .search-result {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .answer {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Subtle gradient for answer */
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .answer:hover {
+    background: linear-gradient(135deg, #f1f1f1, #e9ecef); /* Light gradient on hover */
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .app {
+      padding: 20px;
+    }
+  
+    input {
+      font-size: 0.9em;
+    }
+  
+    button, .surprise {
+      font-size: 0.9em;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
