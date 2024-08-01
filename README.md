@@ -13,5 +13,3 @@ npm run start:frontend
 Start the server (default: localhost/8000)
 ```
 npm run start:backend
-```
-![chrome_KYVAqnQlCw](https://github.com/JeremiahDMoore/google-gemini-chatbot/assets/23569464/f34dc707-3d7f-4a4a-afd7-04c3a120e806)
